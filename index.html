@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Simple Clone</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header class="navbar">
+        <div class="logo">
+            <h2>Flipkart</h2>
+            <p>Explore <span>Plus</span></p>
+        </div>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search for products, brands and more" onkeyup="searchProducts()">
+        </div>
+        <button class="login-btn">Login</button>
+        <div class="cart-container">
+            <span class="cart-icon">🛒</span> Cart (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <nav class="categories">
+        <div class="cat-item">Grocery</div>
+        <div class="cat-item">Mobiles</div>
+        <div class="cat-item">Fashion</div>
+        <div class="cat-item">Electronics</div>
+        <div class="cat-item">Home</div>
+        <div class="cat-item">Appliances</div>
+    </nav>
+
+    
+    <div class="banner">
+        <img id="banner-img" src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1200&q=80" alt="Sale Banner">
+    </div>
+
+    
+    <main class="main-content">
+        <h3>Top Deals for You</h3>
+        <div class="product-grid" id="product-list">
+    
+        </div>
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
